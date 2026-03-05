@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - Google DevFest Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .profile-section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: white;
+        }
+        
+        .profile-name {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .profile-title {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .info-section {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .info-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #667eea;
+            text-align: center;
+        }
+        
+        .info-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .interest-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .interest-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-section {
+            padding: 4rem 0;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .contact-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">DevFest Workshop</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="gdg-devfest.html">GDG & DevFest</a></li>
+                <li><a href="devtools-mcp.html">DevTools MCP</a></li>
+                <li><a href="about-me.html" class="active">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>关于我</h1>
+            <p>Workshop 讲师介绍</p>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-image">👨‍💻</div>
+            <h2 class="profile-name">[你的名字]</h2>
+            <p class="profile-title">[你的职业]</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <h2>个人简介</h2>
+            <div class="info-content">
+                <p>你好！我是 [你的名字]，一名热爱技术的 [你的职业]。我对前沿技术充满热情，特别是在 Web 开发、开发者工具和 AI 辅助开发领域。</p>
+                <p>很荣幸能在 Google DevFest 上分享关于 Chrome DevTools MCP Server 的知识和经验。我相信通过 AI 和开发工具的结合，我们可以大幅提升开发效率，创造更好的产品。</p>
+                <p>在这次 Workshop 中，我将带领大家深入了解如何使用 Chrome DevTools MCP Server，探索 AI 辅助开发的无限可能。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" style="background: white;">
+        <div class="container">
+            <h2>兴趣爱好</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <div class="interest-icon">💻</div>
+                    <h3>编程开发</h3>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🤖</div>
+                    <h3>人工智能</h3>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">🎨</div>
+                    <h3>UI/UX 设计</h3>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">📚</div>
+                    <h3>技术分享</h3>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">[添加你的兴趣]</div>
+                    <h3>[你的兴趣]</h3>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">[添加你的兴趣]</div>
+                    <h3>[你的兴趣]</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 1rem;">联系方式</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">欢迎与我交流技术话题或合作机会</p>
+            <div class="contact-links">
+                <a href="mailto:your-email@example.com" class="contact-link">
+                    <span>📧</span>
+                    <span>邮箱</span>
+                </a>
+                <a href="https://github.com/yourusername" class="contact-link" target="_blank">
+                    <span>💻</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" class="contact-link" target="_blank">
+                    <span>💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com/yourusername" class="contact-link" target="_blank">
+                    <span>🐦</span>
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Google DevFest Workshop. All rights reserved.</p>
+            <p>Powered by Chrome DevTools MCP Server</p>
+        </div>
+    </footer>
+</body>
+</html>

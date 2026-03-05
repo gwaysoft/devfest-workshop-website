@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools MCP - Google DevFest Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #ea4335, #fbbc04);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .content-section {
+            padding: 4rem 0;
+        }
+        
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .content-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #ea4335;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            color: #ea4335;
+            margin-bottom: 1rem;
+        }
+        
+        .code-example {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1.5rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">DevFest Workshop</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="gdg-devfest.html">GDG & DevFest</a></li>
+                <li><a href="devtools-mcp.html" class="active">DevTools MCP</a></li>
+                <li><a href="about-me.html">关于我</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Chrome DevTools MCP Server</h1>
+            <p>强大的开发工具与模型上下文协议的完美结合</p>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>🔧 什么是 Chrome DevTools？</h2>
+            <p>Chrome DevTools 是 Google Chrome 浏览器内置的一套强大的开发者工具，为 Web 开发者提供了调试、性能分析、网络监控等全方位的开发支持。</p>
+            <p>通过 DevTools，开发者可以实时查看和修改 HTML/CSS、调试 JavaScript、分析网络请求、优化性能、模拟移动设备等，是现代 Web 开发不可或缺的工具。</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>🤖 什么是 MCP（Model Context Protocol）？</h2>
+            <p>MCP（Model Context Protocol）是一个开放协议，旨在标准化 AI 模型与外部工具、数据源之间的交互方式。通过 MCP，AI 助手可以安全、高效地访问各种工具和服务。</p>
+            <p>MCP Server 充当 AI 模型和实际工具之间的桥梁，提供统一的接口和协议，使 AI 能够理解和使用各种开发工具。</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>⚡ Chrome DevTools MCP Server</h2>
+            <p>Chrome DevTools MCP Server 将 Chrome DevTools 的强大功能通过 MCP 协议暴露给 AI 助手，使 AI 能够：</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🌐 浏览器自动化</h3>
+                    <p>AI 可以控制浏览器导航、点击、填写表单等操作，实现智能化的 Web 交互</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔍 页面分析</h3>
+                    <p>获取页面快照、分析 DOM 结构、检查元素属性，帮助理解页面内容</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🐛 调试辅助</h3>
+                    <p>查看控制台消息、网络请求、性能数据，协助开发者定位问题</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📸 截图与录制</h3>
+                    <p>捕获页面截图、录制操作流程，便于文档和测试</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚙️ 设备模拟</h3>
+                    <p>模拟不同设备、网络条件、地理位置，测试响应式设计</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 样式调试</h3>
+                    <p>实时修改 CSS、测试样式效果，加速前端开发</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>💡 使用场景</h2>
+            <p>Chrome DevTools MCP Server 可以应用于多种场景：</p>
+            <ul class="feature-list">
+                <li><strong>智能测试：</strong>AI 辅助编写和执行 E2E 测试</li>
+                <li><strong>网页抓取：</strong>智能提取网页数据和内容</li>
+                <li><strong>UI 调试：</strong>AI 协助定位和修复界面问题</li>
+                <li><strong>性能优化：</strong>自动分析性能瓶颈并提供建议</li>
+                <li><strong>可访问性检查：</strong>评估和改进网站的可访问性</li>
+                <li><strong>开发辅助：</strong>实时预览代码效果，加速开发流程</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>🚀 快速开始</h2>
+            <p>要使用 Chrome DevTools MCP Server，你需要：</p>
+            <div class="code-example">
+                <pre>
+# 1. 安装 MCP Server
+npm install -g chrome-devtools-mcp-server
+
+# 2. 启动服务
+chrome-devtools-mcp-server
+
+# 3. 在 AI 助手中配置 MCP 连接
+# 配置文件示例：mcp.json
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "chrome-devtools-mcp-server",
+      "args": []
+    }
+  }
+}
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Google DevFest Workshop. All rights reserved.</p>
+            <p>Powered by Chrome DevTools MCP Server</p>
+        </div>
+    </footer>
+</body>
+</html>
